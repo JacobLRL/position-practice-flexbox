@@ -1,0 +1,50 @@
+.header-container, .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+}
+
+.header-container {
+    background-color: blueviolet;
+}
+
+.div-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    max-height: 100%;
+    margin: 5px 0;
+}
+
+.div-container .item-left, .item-right{
+    display: inherit;
+    flex-direction: column;
+    justify-content: inherit;
+    text-align: center;
+    height: 600px;
+    overflow: hidden;
+}
+
+.div-container .item-left{
+    background-color: red;
+    margin-right: 2.5px;
+}
+
+.div-container .item-right {
+    background-color: blue;
+    margin-left: 2.5px;
+}
+
+.footer-container {
+    background-color: brown;
+}
+
+@media(max-width: 400px) {
+    .item-right{
+        display: none;
+    }
+}
